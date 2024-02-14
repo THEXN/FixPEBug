@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TShock" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Chireiden.TShock.Omni">
+      <HintPath>bin\Release\net6.0\Chireiden.TShock.Omni.dll</HintPath>
+    </Reference>
+    <Reference Include="Chireiden.TShock.Omni.Misc">
+      <HintPath>bin\Release\net6.0\Chireiden.TShock.Omni.Misc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

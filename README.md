@@ -14,9 +14,9 @@
 - **修改Nuget**:直接引用了恋恋插件的nuget包
 ## 安装指南
 
-请务必安装恋恋的乱七八遭插件，以确保插件正常工作。
+请务必安装恋恋的乱七八糟插件，以确保插件正常工作。
 
-[恋恋的乱七八遭插件](https://github.com/sgkoishi/yaaiomni/releases)
+[恋恋的乱七八糟插件](https://github.com/sgkoishi/yaaiomni/releases)
 
 ## 插件功能
 

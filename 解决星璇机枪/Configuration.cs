@@ -10,8 +10,10 @@ namespace fixbugpe
     {
         public static readonly string FilePath = Path.Combine(TShock.SavePath, "解决PE锤子喝药等相关bug.json");
         // 你可以在这里添加你希望排除的物品信息
+        private static readonly int[] DefaultExemptItemList = { 205, 206, 207, 1128 };
+
         [JsonProperty("免检测物品列表")]
-        public List<int> ExemptItemList { get; set; } = new List<int> { 205, 206, 207, 1128 };
+        public int[] ExemptItemList { get; set; }
 
         [JsonProperty("是否杀死")]
         public bool KillPlayerOnUse { get; set; } = true;
@@ -25,8 +27,10 @@ namespace fixbugpe
         [JsonProperty("是否踢出")]
         public bool KickPlayerOnUse { get; set; } = false;
 
-
-
+        public Configuration()
+        {
+            ExemptItemList = DefaultExemptItemList;
+        }
 
         public void Write(string path)
         {

@@ -14,7 +14,7 @@ namespace fixbugpe
         public override string Author => "熙恩，感谢恋恋";
         public override string Description => "解决PE锤子喝药等相关bug";
         public override string Name => "解决PE锤子喝药等相关bug";
-        public override Version Version => new Version(1, 0, 2);
+        public override Version Version => new Version(1, 0, 4);
         public static Configuration Config;
         public bool otherPluginExists = false;
 
@@ -34,6 +34,7 @@ namespace fixbugpe
             LoadConfig();
             args.Player?.SendSuccessMessage("[{0}] 重新加载配置完毕。", typeof(解决PE锤子喝药等相关bug).Name);
         }
+
 
         public override void Initialize()
         {
@@ -67,7 +68,7 @@ namespace fixbugpe
                 if (Config.KillPlayerOnUse)
                 {
                     TShock.Utils.Broadcast("玩家 " + player.Name + " 因为卡换格子bug被杀死", Color.Green);
-                    player.Dead = true;
+                    player.KillPlayer();
                 }
 
                 if (Config.ApplyBuffOnUse)
@@ -75,10 +76,9 @@ namespace fixbugpe
                     TShock.Utils.Broadcast("玩家 " + player.Name + " 因为卡换格子bug被上buff", Color.Green);
                     foreach (int buffType in Config.BuffTypes)
                     {
-                        player.SetBuff(buffType, 3600);
+                        player.SetBuff(buffType, 60); // 持续1分钟，以秒为单位
                     }
                 }
-
 
             }
         }

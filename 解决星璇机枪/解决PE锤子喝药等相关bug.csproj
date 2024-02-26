@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,16 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TShock" Version="5.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Chireiden.TShock.Omni">
-      <HintPath>bin\Release\net6.0\Chireiden.TShock.Omni.dll</HintPath>
-    </Reference>
-    <Reference Include="Chireiden.TShock.Omni.Misc">
-      <HintPath>bin\Release\net6.0\Chireiden.TShock.Omni.Misc.dll</HintPath>
-    </Reference>
+  	  <PackageReference Include="Chireiden.TShock.Omni" Version="0.0.159-ci" />
   </ItemGroup>
 
 </Project>

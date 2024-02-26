@@ -61,8 +61,8 @@ namespace fixbugpe
                 if (Config.KickPlayerOnUse)
                 {
                     TShock.Utils.Broadcast("玩家 " + player.Name + " 因为卡换格子bug被踢出", Color.Green);
-                    player.Kick("因为卡换格子bug被踢出");
-                }
+                player.Kick("因为卡换格子bug被踢出");
+            }
 
                 if (Config.KillPlayerOnUse)
                 {

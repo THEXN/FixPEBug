@@ -16,9 +16,9 @@
 
 请务必安装恋恋的乱七八糟插件，以确保插件正常工作。
 
-[恋恋的乱七八糟插件](https://github.com/sgkoishi/yaaiomni/releases)
+[恋恋的乱七八糟插件](https://github.com/sgkoishi/yaaiomni/releases):https://github.com/sgkoishi/yaaiomni/releases
 
 ## 插件功能
 
 - 这个TShock插件旨在解决《泰拉瑞亚》（Terraria）中的一些特定Bug，例如PE的锤子喝药和星旋机枪的问题。
-- 有任何问题可以来提issues[本插件](https://github.com/THEXN/FixPEBug)
+- 有任何问题可以来提issues[本插件](https://github.com/THEXN/FixPEBug):https://github.com/THEXN/FixPEBug

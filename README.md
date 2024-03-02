@@ -17,6 +17,8 @@
 请务必安装恋恋的乱七八糟插件，以确保插件正常工作。
 
 [恋恋的乱七八糟插件](https://github.com/sgkoishi/yaaiomni/releases)
+有任何问题可以来提issues
+[本插件](https://github.com/THEXN/FixPEBug)
 
 ## 插件功能
 
